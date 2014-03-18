@@ -1,0 +1,19 @@
+1.1 Designed to teach learning sheet music
+1.2 intended to teach someone who has no idea about how to read music. Someone who can atleast read and understand the words with age more than 8. They are self motivated to learn music
+1.3 tests for each unit.
+	mastery level to define each unit. - we need to decide how units will progress
+	whether we should keep a pre test before each unit
+
+1.4 ask prof - what would "control" mean related to music. would it mean - Someone who is learning music already at a different place or someone who has no knowledge of it.
+
+2.1 it can be both answer based (mostly) as well as step based in some cases (example - )
+	expert model if we have time. so for now we will just write an answer based tutor with 10 to 12 problems in a unit.
+	we can also add sounds for each note and then may be play it later. and use it to train ur ear as well what note is being played. 
+	dialogue can be used during initial learning of the unit but that would be time dependent as well.
+	initial teaching would be using articles. and then a quick question which would test what they read.
+
+2.2 Browser based and language we can chose from all the languages that we have. 
+
+Figure out exact units and then we can divide the work between us
+
+2.3 
