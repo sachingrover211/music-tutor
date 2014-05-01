@@ -1,0 +1,15 @@
+<p>{{question.questions}}</p>
+<ul>
+	{% if question.image != '' %}
+		<li><img src="{{STATIC_URL}}{{question.image}}"/></li>
+	{% endif %}
+	{{question.answer}}
+	{% for ans in question.answer %}
+		{% if forloop.last %}
+			<input type = "hidden" value={{ ans.correctAnswer }} id="correctAnswer"/>
+		{% else %}	
+			<li><input type ="radio" name="ans" value = {{ forloop.counter }}>{ans.answer}</li>
+		{% endif %}
+	{% endfor %}
+	
+</ul>

@@ -12,6 +12,6 @@ del phonebook["Jill"]
 
 # testing code
 if "Jake" in phonebook:
-    print("Jake is listed in the phonebook.")
+    print("Jake is listed in the phonebook." + phonebook["Jake"].toString())
 if "Jill" not in phonebook:
     print("Jill is not listed in the phonebook.")

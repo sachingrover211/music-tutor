@@ -1,0 +1,11 @@
+{% extends "framework.html" %}
+
+{% block body %}
+<h1> {{article.level}} </h1>
+<div class="column-right">
+	<p>{{article.articleText}}</p>
+	<input class="right" type="submit" value="Take test"></input>
+	<div class="clearfix"></div>
+</div>
+
+{% endblock %}

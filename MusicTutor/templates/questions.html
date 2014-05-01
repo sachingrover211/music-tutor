@@ -1,0 +1,18 @@
+{% extends "framework.html" %}
+
+{% block body %}
+
+<ul id = "questions"/>
+{{ questions }}
+{% for question in questions %}
+	<li>
+	<div id="questionNumber{{ forloop.counter }">
+		{% if question.qType == 'mcq' %}
+			{% include 'qna/multipleChoice.html' with question=question %}
+		{% elif question.qType == 'text' %}
+			{% include 'qna/textAnswer.html' with question=question %}
+		{% endif %}
+	</div>
+	</li>
+{% endfor %}
+{% endblock %}

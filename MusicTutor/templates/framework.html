@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Framework</title>
+<!--{% load staticfiles %} -->
+<link href="{{STATIC_URL}}style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="left logo">MUSIC TUTOR</div>
+        <ul class="menu catalog left">
+            <li><a href="#">Beginner</a></li>
+            <li><a href="#">Intermediate</a></li>
+            <li><a href="#">Expert</a></li>
+            <!--<li><a href="#">Contact</a></li>-->
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container">
+        {% block body %}
+        <h1>Container heading goes here</h1>
+        <!--
+        <div class="column-left left">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Cloud Storage</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Optimization</a></li>
+                <li><a href="#">Analytics</a></li>                                                                                
+            </ul>
+        </div>-->
+        <div class="column-right">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+            
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            <h2>1914 translation by H. Rackham</h2>
+            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+        </div>
+        <div class="clearfix"></div>
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <div class="left"><a href="#">Terms of Service</a>  |  <a href="#">Privacy</a>  |  <a href="#">FAQs</a></div>
+        <div class="right">&copy; 2014</div>
+        <div class="clearfix"></div>
+    </div>        
+</div>
+</body>
+</html>

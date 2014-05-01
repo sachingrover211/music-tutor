@@ -1,0 +1,10 @@
+<ul>
+	{% if question.image != '' %}
+		<li><img src="{{STATIC_URL}}{{question.image}}"/></li>
+	{% endif %}
+	<li><p>{{question.questions}}</p></li>
+	<li>
+		<input type = "text" value="Please enter your answer" id="answer"/>
+		<input type = "hidden" value = "{{question.answer.correctAnswer}}" id="correctAnswer"/>
+	</li>
+</ul>
